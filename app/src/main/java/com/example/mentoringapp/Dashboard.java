@@ -23,7 +23,7 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         spinner=findViewById(R.id.spinner);
-        button_apply=findViewById(R.id.submiterp);
+        button_apply=findViewById(R.id.submithostel);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(Dashboard.this, android.R.layout.simple_spinner_item, Mentor);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
