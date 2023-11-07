@@ -2,7 +2,6 @@ package com.example.mentoringapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +17,7 @@ public class ERPReguarding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erpreguarding);
-        submiterp=findViewById(R.id.submiterp);
+        submiterp=findViewById(R.id.submithostel);
         submiterp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

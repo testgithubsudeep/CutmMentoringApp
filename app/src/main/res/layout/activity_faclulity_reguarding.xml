@@ -71,7 +71,7 @@
                 android:inputType="textMultiLine" />
 
             <Button
-                android:id="@+id/submiterp"
+                android:id="@+id/submithostel"
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="370dp"
