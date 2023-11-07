@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F7"
+    tools:context=".Dashboard">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="345dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="75dp"
+        app:cardBackgroundColor="#01BDD5"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.642"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="200sp"
+            android:layout_marginTop="200sp"
+            app:cardCornerRadius="10sp">
+
+            <TextView
+                android:id="@+id/home7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="85sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="Grievance Box"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/griviance"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/complaint" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="200sp"
+            android:layout_marginTop="40sp"
+            app:cardCornerRadius="10sp">
+
+            <ImageView
+                android:id="@+id/academic"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/academic" />
+
+            <TextView
+                android:id="@+id/home3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33sp"
+                android:layout_marginTop="85sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="Academic"
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="200sp"
+            app:cardCornerRadius="10sp">
+
+            <ImageView
+                android:id="@+id/exam"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/test" />
+
+            <TextView
+                android:id="@+id/home4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="85sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="Exam Results"
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="40sp"
+            app:cardCornerRadius="10sp">
+
+            <ImageView
+                android:id="@+id/persnal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="85sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="Personal Details"
+                android:textColor="#000000" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="370sp"
+            app:cardCornerRadius="10sp">
+
+            <TextView
+                android:id="@+id/home5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23sp"
+                android:layout_marginTop="85sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="Pdf Generate"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/pdf"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/pdf" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="200sp"
+            android:layout_marginTop="370sp"
+            app:cardCornerRadius="10sp">
+
+            <TextView
+                android:id="@+id/home6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="75sp"
+                android:fontFamily="@font/emilys_candy"
+                android:text="About Us"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/about" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/userprofile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graduate" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="67dp"
+        android:text="Hi, User"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

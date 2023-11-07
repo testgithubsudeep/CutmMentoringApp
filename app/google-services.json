@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "854019947207",
+    "project_id": "mentoringapp-140cb",
+    "storage_bucket": "mentoringapp-140cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854019947207:android:ea9f5e7bbe43a7a4ff5ce2",
+        "android_client_info": {
+          "package_name": "com.example.mentoringapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAomuLO-4Iq3-eR5q4qNFeBUxSxi5lDF1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".ComplainStudent">
+
+    <TextView
+
+        android:id="@+id/complain_student"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/arbutus"
+        android:text="Query"
+
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="345dp"
+        android:layout_height="541dp"
+        android:layout_marginTop="130dp"
+        app:cardBackgroundColor="#EDEBF1"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/studentrecord"
+            android:layout_width="297dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="50sp"
+            app:cardBackgroundColor="#A3D6D0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/recordsp"
+                android:layout_width="143dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="5sp"
+                app:srcCompat="@drawable/baseline_security_24" />
+
+            <TextView
+                android:id="@+id/faculity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="60sp"
+                android:fontFamily="@font/aldrich"
+                android:text="Faculty Regarding"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="297dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="170sp"
+            app:cardBackgroundColor="#E1D4B4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studentrecord"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/semester"
+                android:layout_width="143dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="5sp"
+                app:srcCompat="@drawable/baseline_dataset_24" />
+
+            <TextView
+                android:id="@+id/hostel"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="60sp"
+                android:fontFamily="@font/aldrich"
+                android:text="Hostel Regarding"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/academic1"
+            android:layout_width="297dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="285sp"
+            app:cardBackgroundColor="#9BB9D6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279"
+
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/academic"
+                android:layout_width="143dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="5sp"
+                app:srcCompat="@drawable/baseline_groups_2_24" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="60sp"
+                android:fontFamily="@font/aldrich"
+                android:text="Subject Regarding"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quadrin1"
+            android:layout_width="297dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="395sp"
+            app:cardBackgroundColor="#EBA4A4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279"
+
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/quadrin"
+                android:layout_width="143dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="5sp"
+                app:srcCompat="@drawable/baseline_subject_24" />
+
+            <TextView
+                android:id="@+id/erp"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="60sp"
+                android:fontFamily="@font/aldrich"
+                android:text="ERP Regarding"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
