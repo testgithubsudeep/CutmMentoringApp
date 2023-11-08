@@ -19,7 +19,7 @@ public class HostelReguarding extends AppCompatActivity {
         submithostel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HostelReguarding.this, " Hostel details Submit Successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HostelReguarding.this, " Hostel regarding query Submit Successfully.", Toast.LENGTH_SHORT).show();
 
                 Intent intent=new Intent(HostelReguarding.this,ComplainStudent.class);
                 startActivity(intent);
