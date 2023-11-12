@@ -23,7 +23,11 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         spinner=findViewById(R.id.spinner);
+<<<<<<< HEAD
         button_apply=findViewById(R.id.facultyerp);
+=======
+        button_apply=findViewById(R.id.submithostel);
+>>>>>>> 91b40ce34edcf0618d97e6c73f023238607a4304
         ArrayAdapter<String> adapter = new ArrayAdapter<>(Dashboard.this, android.R.layout.simple_spinner_item, Mentor);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -33,7 +37,7 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemSe
         button_apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this, StudentRecord.class);
+                Intent intent=new Intent(Dashboard.this, MainActivity2.class);
                 startActivity(intent);
             }
         });
