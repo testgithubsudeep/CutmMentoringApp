@@ -33,7 +33,7 @@ ImageView persnal,academic,griviance,exam,pdf,about,userprofile;
         persnal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(StudentRecord.this,StudentPersnal.class);
+                Intent intent=new Intent(StudentRecord.this,MainActivity2.class);
                 startActivity(intent);
             }
         });

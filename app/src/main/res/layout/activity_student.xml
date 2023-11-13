@@ -35,6 +35,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
+        <Button
+            android:id="@+id/sview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180sp"
+            android:layout_marginTop="470sp"
+            android:text="View" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -51,7 +59,7 @@
             tools:layout_editor_absoluteX="16dp" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/sname"
 
             android:layout_height="43dp"
             android:layout_width="182dp"
@@ -86,13 +94,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.362" />
+
         <EditText
-            android:layout_height="43dp"
+            android:id="@+id/sregd"
             android:layout_width="182dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="120sp"
             android:layout_marginTop="110sp"
-            android:ems="10"
 
+            android:ems="10"
             android:inputType="text"
             android:textSize="25sp"
             android:textStyle="bold|italic"
@@ -115,13 +125,15 @@
             android:textStyle="bold"
             tools:layout_editor_absoluteX="19dp"
             tools:layout_editor_absoluteY="387dp" />
+
         <EditText
-            android:layout_height="43dp"
+            android:id="@+id/sdob"
             android:layout_width="182dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="120sp"
             android:layout_marginTop="155sp"
-            android:ems="10"
 
+            android:ems="10"
             android:inputType="text"
             android:textSize="25sp"
             android:textStyle="bold|italic"
@@ -144,13 +156,15 @@
             android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="237dp" />
+
         <EditText
-            android:layout_height="43dp"
+            android:id="@+id/sbranch"
             android:layout_width="182dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="120sp"
             android:layout_marginTop="210sp"
-            android:ems="10"
 
+            android:ems="10"
             android:inputType="text"
             android:textSize="25sp"
             android:textStyle="bold|italic"
@@ -178,6 +192,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.533" />
         <EditText
+            android:id="@+id/semail"
             android:layout_height="43dp"
             android:layout_width="182dp"
             android:layout_marginLeft="120sp"
@@ -210,22 +225,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.677" />
-        <EditText
-            android:layout_height="43dp"
-            android:layout_width="182dp"
-            android:layout_marginLeft="120sp"
-            android:layout_marginTop="310sp"
-            android:ems="10"
 
-            android:inputType="text"
-            android:textSize="25sp"
-            android:textStyle="bold|italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.192" />
+
 
         <TextView
             android:id="@+id/textView10"
@@ -243,13 +244,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.606" />
+
         <EditText
-            android:layout_height="43dp"
+            android:id="@+id/sblood"
             android:layout_width="182dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="120sp"
+            android:layout_marginTop="320sp"
+
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.192" />
+
+        <EditText
+            android:id="@+id/sphone"
+            android:layout_width="182dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="120sp"
             android:layout_marginTop="360sp"
-            android:ems="10"
 
+            android:ems="10"
             android:inputType="text"
             android:textSize="25sp"
             android:textStyle="bold|italic"
@@ -275,13 +296,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.754" />
+
         <EditText
-            android:layout_height="43dp"
+            android:id="@+id/sadress"
             android:layout_width="182dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="120sp"
             android:layout_marginTop="410sp"
-            android:ems="10"
 
+            android:ems="10"
             android:inputType="text"
             android:textSize="25sp"
             android:textStyle="bold|italic"
@@ -293,10 +316,10 @@
             app:layout_constraintVertical_bias="0.192" />
 
         <Button
-            android:id="@+id/studentdetails"
+            android:id="@+id/sadd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120sp"
+            android:layout_marginLeft="80sp"
             android:layout_marginTop="470sp"
             android:text="Submit" />
 

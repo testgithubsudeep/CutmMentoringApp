@@ -1,10 +1,10 @@
 package com.example.mentoringapp;
-
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
     DatabaseHelper myDb;
-    EditText nameEditText, surnameEditText, markEditText, idEditText;
-    Button addButton, displayButton, updateButton, deleteButton;
+    EditText sname, sregd, sdob, sbranch,semail,sblood,sphone,sadress;
+    Button sadd, sview,sdelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,27 +21,36 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         myDb = new DatabaseHelper(this);
-        nameEditText = findViewById(R.id.name);
-        surnameEditText = findViewById(R.id.surname);
-        markEditText = findViewById(R.id.mark);
-        idEditText = findViewById(R.id.id);
-        addButton = findViewById(R.id.button);
-        displayButton = findViewById(R.id.add);
-        updateButton = findViewById(R.id.update);
-        deleteButton = findViewById(R.id.delete);
+        sname = findViewById(R.id.sname);
+        sregd = findViewById(R.id.sregd);
+        sdob = findViewById(R.id.sdob);
+        sbranch = findViewById(R.id.sbranch);
+        semail = findViewById(R.id.semail);
+        sblood = findViewById(R.id.sblood);
+        sphone = findViewById(R.id.sphone);
+        sadress = findViewById(R.id.sadress);
+        sadd = findViewById(R.id.sadd);
+        sview = findViewById(R.id.sview);
+        sdelete= findViewById(R.id.sdelete);
 
-        addButton.setOnClickListener(new View.OnClickListener() {
+        sadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = nameEditText.getText().toString();
-                String surname = surnameEditText.getText().toString();
-                String mark = markEditText.getText().toString();
+                String name = sname.getText().toString();
+                String regd = sregd.getText().toString();
+                String dob = sdob.getText().toString();
+                String branch = sbranch.getText().toString();
+                String email = semail.getText().toString();
+                String blood = sblood.getText().toString();
+                String phone = sphone.getText().toString();
+                String address = sadress.getText().toString();
 
-                if (name.trim().isEmpty() || surname.trim().isEmpty() || mark.trim().isEmpty()) {
+                if (name.trim().isEmpty() || regd.trim().isEmpty() || dob.trim().isEmpty() || branch.trim().isEmpty() ||
+                        email.trim().isEmpty() || blood.trim().isEmpty() || phone.trim().isEmpty() || address.trim().isEmpty()) {
                     // Handle empty input fields
                     Toast.makeText(MainActivity2.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    boolean isInserted = myDb.insertData(name, surname, mark);
+                    boolean isInserted = myDb.insertData(name, regd, dob, branch, email, blood, phone, address);
                     if (isInserted) {
                         // Data inserted successfully
                         Toast.makeText(MainActivity2.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
@@ -53,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        displayButton.setOnClickListener(new View.OnClickListener() {
+        sview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Cursor result = myDb.getAllData();
@@ -67,47 +76,44 @@ public class MainActivity2 extends AppCompatActivity {
                 while (result.moveToNext()) {
                     buffer.append("ID: ").append(result.getString(0)).append("\n");
                     buffer.append("Name: ").append(result.getString(1)).append("\n");
-                    buffer.append("Surname: ").append(result.getString(2)).append("\n");
-                    buffer.append("Mark: ").append(result.getString(3)).append("\n\n");
+                    buffer.append("Regd: ").append(result.getString(2)).append("\n");
+                    // Add other fields as needed
+                    buffer.append("DOB: ").append(result.getString(3)).append("\n");
+                    buffer.append("Branch: ").append(result.getString(4)).append("\n");
+                    buffer.append("Email: ").append(result.getString(5)).append("\n");
+                    buffer.append("Blood: ").append(result.getString(6)).append("\n");
+                    buffer.append("Phone: ").append(result.getString(7)).append("\n");
+                    buffer.append("Address: ").append(result.getString(8)).append("\n\n");
                 }
 
                 // Show all data
                 showMessage("Data", buffer.toString());
             }
         });
-
-        updateButton.setOnClickListener(new View.OnClickListener() {
+        sdelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id = idEditText.getText().toString();
-                String name = nameEditText.getText().toString();
-                String surname = surnameEditText.getText().toString();
-                String mark = markEditText.getText().toString();
-                boolean isUpdated = myDb.updateData(id, name, surname, mark);
-                if (isUpdated) {
-                    // Data updated successfully
-                    Toast.makeText(MainActivity2.this, "Data updated successfully", Toast.LENGTH_SHORT).show();
+                String idToDelete = sname.getText().toString(); // Assuming regd is used as the ID
+                if (!idToDelete.isEmpty()) {
+                    boolean isDeleted = myDb.deleteData(idToDelete);
+                    if (isDeleted) {
+                        // Data deleted successfully
+                        Toast.makeText(MainActivity2.this, "Data deleted successfully", Toast.LENGTH_SHORT).show();
+                        // Optionally, clear the input fields after deletion
+                        clearInputFields();
+                    } else {
+                        // Failed to delete data
+                        Toast.makeText(MainActivity2.this, "Failed to delete data", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
-                    // Failed to update data
-                    Toast.makeText(MainActivity2.this, "Failed to update data", Toast.LENGTH_SHORT).show();
+                    // Provide a message to the user to enter the ID for deletion
+                    Toast.makeText(MainActivity2.this, "Please enter an ID for deletion", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
 
-        deleteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String id = idEditText.getText().toString();
-                boolean isDeleted = myDb.deleteData(id);
-                if (isDeleted) {
-                    // Data deleted successfully
-                    Toast.makeText(MainActivity2.this, "Data deleted successfully", Toast.LENGTH_SHORT).show();
-                } else {
-                    // Failed to delete data
-                    Toast.makeText(MainActivity2.this, "Failed to delete data", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+    private void clearInputFields() {
     }
 
     private void showMessage(String title, String message) {

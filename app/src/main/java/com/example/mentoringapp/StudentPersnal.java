@@ -13,9 +13,9 @@ public class StudentPersnal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_persnal);
+        setContentView(R.layout.activity_student);
 
-        studentdetails=findViewById(R.id.studentdetails);
+        studentdetails=findViewById(R.id.sadd);
 
         studentdetails.setOnClickListener(new View.OnClickListener() {
             @Override

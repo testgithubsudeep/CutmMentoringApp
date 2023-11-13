@@ -33,7 +33,7 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemSe
         button_apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this, MainActivity2.class);
+                Intent intent=new Intent(Dashboard.this, StudentRecord.class);
                 startActivity(intent);
             }
         });
