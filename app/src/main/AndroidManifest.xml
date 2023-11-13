@@ -12,7 +12,11 @@
         android:theme="@style/Theme.MentoringApp"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".ActivityExam2"
+=======
+            android:name=".Academic_Detailsdb"
+>>>>>>> 82d594ebf2a955e5646188c2974a4a84b737a115
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
