@@ -72,11 +72,7 @@
                 android:inputType="textMultiLine" />
 
             <Button
-<<<<<<< HEAD
-                android:id="@+id/facultyerp"
-=======
                 android:id="@+id/submithostel"
->>>>>>> 91b40ce34edcf0618d97e6c73f023238607a4304
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="200dp"
