@@ -274,7 +274,7 @@
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#008000"
-                android:text="Submit"
+                android:text="Submits"
                 android:textColorLink="#750C0C" />
 
         </LinearLayout>

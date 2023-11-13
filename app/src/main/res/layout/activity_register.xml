@@ -116,7 +116,7 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="440dp"
                 android:background="@drawable/input_bg"
-                android:text="Register"
+                android:text="Registers"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.43"

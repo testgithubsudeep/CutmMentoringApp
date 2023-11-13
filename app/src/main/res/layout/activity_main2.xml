@@ -7,7 +7,9 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="@drawable/bg1"
     tools:context=".MainActivity2">
+
 
     <EditText
         android:id="@+id/sname"
