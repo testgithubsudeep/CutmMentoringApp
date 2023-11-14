@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
-    >
+    android:background="@drawable/bg1">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -58,7 +57,9 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="30dp"
                 android:hint="Enter total mark in %"
-                tools:ignore="TouchTargetSizeCheck"></EditText>
+                tools:ignore="TouchTargetSizeCheck">
+
+            </EditText>
 
             <EditText
                 android:id="@+id/plus2"
@@ -67,7 +68,9 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="80dp"
                 android:hint="Enter total mark in %"
-                tools:ignore="TouchTargetSizeCheck"></EditText>
+                tools:ignore="TouchTargetSizeCheck">
+
+            </EditText>
 
             <EditText
                 android:id="@+id/coursename"
@@ -147,12 +150,26 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/academicdetails"
+                android:id="@+id/addacademicdetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="230dp"
-                android:layout_marginTop="380dp"
+                android:layout_marginTop="330dp"
                 android:text="Submit" />
+            <Button
+                android:id="@+id/viewacademicdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="330dp"
+                android:text="View" />
+            <Button
+                android:id="@+id/deletecademicdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="330dp"
+                android:text="View" />
 
 
         </androidx.cardview.widget.CardView>
