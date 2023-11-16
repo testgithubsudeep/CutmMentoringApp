@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class StudentRecord extends AppCompatActivity {
-
+// Adding student data in record
 ImageView persnal,academic,griviance,exam,pdf,about,userprofile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
