@@ -41,7 +41,7 @@ ImageView persnal,academic,griviance,exam,pdf,about,userprofile;
         academic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(StudentRecord.this,AcademicDetails.class);
+                Intent intent=new Intent(StudentRecord.this,Academic_Detailsdb.class);
                 startActivity(intent);
             }
         });

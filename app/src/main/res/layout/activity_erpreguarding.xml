@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/erpregarding"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg1"
@@ -48,7 +48,8 @@
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="write the subject "
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -69,7 +70,9 @@
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="write the description in details "
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/erpregarding"
@@ -84,7 +87,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/erpregarding"
+
             android:layout_width="274dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="74sp"

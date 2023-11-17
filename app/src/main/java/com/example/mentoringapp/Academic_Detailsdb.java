@@ -114,5 +114,5 @@ public class Academic_Detailsdb extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
- }
+    }
 }

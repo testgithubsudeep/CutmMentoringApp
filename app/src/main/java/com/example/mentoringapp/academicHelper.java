@@ -60,7 +60,7 @@ public class academicHelper extends SQLiteOpenHelper {
     // Add the following method to your DatabaseHelper class
     public boolean deleteData(String matrics) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_NAME, COL_MATRICS + "=?", new String[]{matrics})>0;
-   }
+        return db.delete(TABLE_NAME, COL_MATRICS + "=?", new String[]{matrics}) > 0;
+    }
 
 }

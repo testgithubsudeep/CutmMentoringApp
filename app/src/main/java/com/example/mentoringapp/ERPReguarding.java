@@ -17,6 +17,7 @@ public class ERPReguarding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erpreguarding);
+        erpregarding=findViewById(R.id.erpregarding);
         erpregarding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
