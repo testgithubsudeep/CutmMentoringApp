@@ -15,6 +15,7 @@ Button academicdetails;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_academic_details);
 
+//        academicdetails=findViewById(R.id.academicdetails);
         academicdetails=findViewById(R.id.academicdetails);
 
         academicdetails.setOnClickListener(new View.OnClickListener() {

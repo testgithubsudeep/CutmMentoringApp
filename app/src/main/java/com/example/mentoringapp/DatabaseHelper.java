@@ -59,7 +59,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL_EMAIL, email);
         contentValues.put(COL_BLOOD, blood);
         contentValues.put(COL_PHONE, phone);
-        contentValues.put(COL_ADDRESS, address);
+        contentValues.put(COL_ADDRESS , address);
         long result = db.insert(TABLE_NAME, null, contentValues);
         return result != -1;
     }

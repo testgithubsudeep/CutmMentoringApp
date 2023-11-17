@@ -16,7 +16,7 @@ public class Dashboard extends AppCompatActivity implements AdapterView.OnItemSe
     private Spinner spinner;
     private Button button_apply;
 
-    String[] Mentor = {"Rakesh sir", "Bubun sir", "Rashmi Sir", "Saroj sir", "Arpita mam", "Other"};
+    String[] Mentor = {"Rakesh sir", "Bubun sir", "Rashmi Sir", "Saroj sir", "Arpita mam"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
