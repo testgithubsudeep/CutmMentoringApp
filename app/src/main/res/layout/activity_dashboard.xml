@@ -101,6 +101,22 @@
             android:layout_marginTop="150sp"
             app:srcCompat="@drawable/academic" />
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="84dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="250sp"
+            android:layout_marginTop="150sp"
+            app:srcCompat="@drawable/academic" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="82dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="120sp"
+            android:layout_marginTop="220sp"
+            app:srcCompat="@drawable/academic" />
+
 
     </androidx.cardview.widget.CardView>
 
