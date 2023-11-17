@@ -16,7 +16,7 @@ public class StudentPersnal extends AppCompatActivity {
         setContentView(R.layout.activity_student);
 
         studentdetails=findViewById(R.id.sadd);
-
+// Integration of student personal data
         studentdetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
