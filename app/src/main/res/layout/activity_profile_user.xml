@@ -50,72 +50,89 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="40dp"
                     android:text="Registration no. :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/regdno"
                     android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="180dp"
                     android:layout_marginTop="32dp"
-                    android:hint="enter last name"
-                    android:minHeight="48dp"></EditText>
+                    android:hint="enter regd no"
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/firstname"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="90dp"
                     android:text="first Name :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
+                    android:id="@+id/firstname"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="140dp"
                     android:layout_marginTop="80dp"
                     android:hint="enter first name"
                     android:inputType="text"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/lastname"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="143dp"
                     android:text="last Name :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/lastname"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="140dp"
                     android:layout_marginTop="133dp"
                     android:hint="enter last name"
                     android:inputType="text"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/age"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="196dp"
                     android:text="Age :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/age"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="186dp"
                     android:hint="enter your age"
                     android:inputType="number"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
                     android:id="@+id/bloodGrp"
@@ -124,17 +141,21 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="245dp"
                     android:text="Blood Group :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/bldGrp"
+                    android:id="@+id/bloodgroup"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="235dp"
-                    android:hint="enter your age"
+                    android:hint="Blod grp"
                     android:inputType="text"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
                     android:id="@+id/dob"
@@ -143,17 +164,21 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="285dp"
                     android:text="Date of Birth :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editTextDob"
+                    android:id="@+id/birthday"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="275dp"
                     android:hint="enter your age"
                     android:inputType="number"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="372dp"
@@ -169,112 +194,112 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="39dp"
                     android:text="Father Name :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editTextFName"
+                    android:id="@+id/fathername"
                     android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="180dp"
                     android:layout_marginTop="32dp"
                     android:hint="enter father's name"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/Occupation"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="90dp"
                     android:text="Occupation :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
+                    android:id="@+id/Foccupation"
                     android:layout_width="206dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="140dp"
                     android:layout_marginTop="80dp"
                     android:hint="fathers's Occupation"
                     android:inputType="text"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/motherName"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="143dp"
                     android:text="Mother Name :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editTextM"
+                    android:id="@+id/mothername"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="160dp"
                     android:layout_marginTop="133dp"
                     android:hint="enter Mother's name"
                     android:inputType="text"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
 
                 <TextView
-                    android:id="@+id/mOccupation"
+
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="196dp"
                     android:text="Occupation :"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+
+                </TextView>
 
                 <EditText
-                    android:id="@+id/editText19"
+                    android:id="@+id/Moccupation"
+
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="150dp"
                     android:layout_marginTop="185dp"
                     android:hint="Mother's Occupation"
-                    android:inputType="number"></EditText>
+                    android:inputType="number">
 
-                <TextView
-                    android:id="@+id/bloodGrp1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="245dp"
-                    android:text="Category :"
-                    android:textSize="20sp"></TextView>
+                </EditText>
 
-                <RadioButton
-                    android:id="@+id/radioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="General"
-                    android:layout_marginTop="270dp"
-                    android:layout_marginLeft="50dp"/>
-                <RadioButton
-                    android:id="@+id/radioButton1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="OBC"
-                    android:layout_marginTop="270dp"
-                    android:layout_marginLeft="150dp"/>
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SC/ST"
-                    android:layout_marginTop="270dp"
-                    android:layout_marginLeft="240dp"/>
+
+
 
             </androidx.cardview.widget.CardView>
             <Button
                 android:id="@+id/resultsubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#008000"
                 android:text="Submits"
+                android:textColorLink="#750C0C" />
+
+            <Button
+                android:id="@+id/resultview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#008000"
+                android:text="View"
                 android:textColorLink="#750C0C" />
 
         </LinearLayout>

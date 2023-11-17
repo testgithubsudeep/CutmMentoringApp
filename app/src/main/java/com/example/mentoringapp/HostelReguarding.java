@@ -15,7 +15,7 @@ public class HostelReguarding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hostel_reguarding);
-        submithostel=findViewById(R.id.facultyerp);
+        submithostel=findViewById(R.id.erpregarding);
         submithostel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
