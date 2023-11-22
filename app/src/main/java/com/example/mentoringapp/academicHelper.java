@@ -60,6 +60,8 @@ public class academicHelper extends SQLiteOpenHelper {
         }
     }
 
+
+//    traversing and processing the results of a database query.
     public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null);

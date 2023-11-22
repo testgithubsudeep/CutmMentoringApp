@@ -37,7 +37,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
                 String plus2s = plus2.getText().toString();
                 String coursenames = coursename.getText().toString();
                 String graduations = graduation.getText().toString();
-
+//                removing white spac char
                 if (matrics.trim().isEmpty() || plus2s.trim().isEmpty() || coursenames.trim().isEmpty() || graduations.trim().isEmpty()) {
                     // Handle empty input fields
                     Toast.makeText(Academic_Detailsdb.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
@@ -74,7 +74,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
                     // Add other fields as needed
                     buffer.append("coursenames: ").append(result.getString(3)).append("\n");
                     buffer.append("graduations: ").append(result.getString(4)).append("\n");
-
+//                     add the specified string
                 }
 
                 // Show all data
