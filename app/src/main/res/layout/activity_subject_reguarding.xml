@@ -39,7 +39,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/subject"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -60,7 +60,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine1"
+                android:id="@+id/desc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -71,7 +71,7 @@
                 android:inputType="textMultiLine" />
 
             <Button
-                android:id="@+id/erpregarding"
+                android:id="@+id/submit1"
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="370dp"
@@ -83,7 +83,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/erpregarding"
+            android:id="@+id/submit1"
             android:layout_width="274dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="74sp"
