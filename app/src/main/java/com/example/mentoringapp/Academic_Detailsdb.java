@@ -1,10 +1,10 @@
 package com.example.mentoringapp;
+
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Academic_Detailsdb extends AppCompatActivity {
     academicHelper myDb;
     EditText matric, plus2, coursename, graduation;
-    Button addacademicdetails, viewacademicdetails,deletecademicdetails;
+    Button submit, view, delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +26,17 @@ public class Academic_Detailsdb extends AppCompatActivity {
         coursename = findViewById(R.id.coursename);
         graduation = findViewById(R.id.graduation);
 
-        addacademicdetails = findViewById(R.id.addacademicdetails);
-        viewacademicdetails = findViewById(R.id.viewacademicdetails);
-        deletecademicdetails= findViewById(R.id.deletecademicdetails);
+        submit = findViewById(R.id.submit);
+        view = findViewById(R.id.view);
+        delete = findViewById(R.id.delete);
 
-        addacademicdetails.setOnClickListener(new View.OnClickListener() {
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String matrics = matric.getText().toString();
                 String plus2s = plus2.getText().toString();
                 String coursenames = coursename.getText().toString();
                 String graduations = graduation.getText().toString();
-
 
                 if (matrics.trim().isEmpty() || plus2s.trim().isEmpty() || coursenames.trim().isEmpty() || graduations.trim().isEmpty()) {
                     // Handle empty input fields
@@ -47,6 +46,8 @@ public class Academic_Detailsdb extends AppCompatActivity {
                     if (isInserted) {
                         // Data inserted successfully
                         Toast.makeText(Academic_Detailsdb.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+                        clearInputFields(); // Clear input fields after successful insertion
+
                     } else {
                         // Failed to insert data
                         Toast.makeText(Academic_Detailsdb.this, "Failed to insert data", Toast.LENGTH_SHORT).show();
@@ -55,36 +56,36 @@ public class Academic_Detailsdb extends AppCompatActivity {
             }
         });
 
-        viewacademicdetails
-                .setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Cursor result = myDb.getAllData();
-                        if (result.getCount() == 0) {
-                            // No data found
-                            showMessage("Error", "No data found");
-                            return;
-                        }
-
-                        StringBuilder buffer = new StringBuilder();
-                        while (result.moveToNext()) {
-                            buffer.append("ID: ").append(result.getString(0)).append("\n");
-                            buffer.append("matrics: ").append(result.getString(1)).append("\n");
-                            buffer.append("plus2s: ").append(result.getString(2)).append("\n");
-                            // Add other fields as needed
-                            buffer.append("coursenames: ").append(result.getString(3)).append("\n");
-                            buffer.append("graduations: ").append(result.getString(4)).append("\n");
-
-                        }
-
-                        // Show all data
-                        showMessage("Data", buffer.toString());
-                    }
-                });
-        deletecademicdetails.setOnClickListener(new View.OnClickListener() {
+        view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String idToDelete = matric.getText().toString(); // Assuming regd is used as the ID
+                Cursor result = myDb.getAllData();
+                if (result.getCount() == 0) {
+                    // No data found
+                    showMessage("Error", "No data found");
+                    return;
+                }
+
+                StringBuilder buffer = new StringBuilder();
+                while (result.moveToNext()) {
+                    buffer.append("ID: ").append(result.getString(0)).append("\n");
+                    buffer.append("matrics: ").append(result.getString(1)).append("\n");
+                    buffer.append("plus2s: ").append(result.getString(2)).append("\n");
+                    // Add other fields as needed
+                    buffer.append("coursenames: ").append(result.getString(3)).append("\n");
+                    buffer.append("graduations: ").append(result.getString(4)).append("\n");
+
+                }
+
+                // Show all data
+                showMessage("Data", buffer.toString());
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String idToDelete = matric.getText().toString(); // Assuming matric is used as the ID
                 if (!idToDelete.isEmpty()) {
                     boolean isDeleted = myDb.deleteData(idToDelete);
                     if (isDeleted) {
@@ -102,9 +103,15 @@ public class Academic_Detailsdb extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     private void clearInputFields() {
+        // Clear input fields
+        matric.getText().clear();
+        plus2.getText().clear();
+        coursename.getText().clear();
+        graduation.getText().clear();
     }
 
     private void showMessage(String title, String message) {

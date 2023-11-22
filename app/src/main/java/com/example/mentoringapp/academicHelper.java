@@ -9,9 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class academicHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "academic_student";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
-    public  static final String TABLE_NAME = "academic_details";
+    public static final String TABLE_NAME = "academic_details";
     public static final String COL_ID = "id";
     public static final String COL_MATRICS = "matrics";
     public static final String COL_PLUS2 = "plus2s";
@@ -49,18 +49,25 @@ public class academicHelper extends SQLiteOpenHelper {
         contentValues.put(COL_COURSENAME, coursenames);
         contentValues.put(COL_GRADUATION, graduations);
 
-        long result = db.insert(TABLE_NAME, null, contentValues);
-        return result != -1;
+        try {
+            long result = db.insert(TABLE_NAME, null, contentValues);
+            return result != -1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            db.close(); // Close the database connection
+        }
     }
 
     public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
     }
+
     // Add the following method to your DatabaseHelper class
     public boolean deleteData(String matrics) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_NAME, COL_MATRICS + "=?", new String[]{matrics}) > 0;
     }
-
 }

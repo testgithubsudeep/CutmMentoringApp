@@ -150,26 +150,27 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/addacademicdetails"
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="230dp"
                 android:layout_marginTop="330dp"
                 android:text="Submit" />
             <Button
-                android:id="@+id/viewacademicdetails"
+                android:id="@+id/view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
                 android:layout_marginTop="330dp"
                 android:text="View" />
+
             <Button
-                android:id="@+id/deletecademicdetails"
+                android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="330dp"
-                android:text="View" />
+                android:text="Delete" />
 
 
         </androidx.cardview.widget.CardView>
