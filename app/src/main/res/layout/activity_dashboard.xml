@@ -89,16 +89,15 @@
             android:id="@+id/imageView4"
             android:layout_width="80dp"
             android:layout_height="58dp"
-            android:layout_marginLeft="100sp"
+            android:layout_marginLeft="150sp"
             android:layout_marginTop="150sp"
-            app:srcCompat="@drawable/rakeshsir"
-            />
+            app:srcCompat="@drawable/rakeshsir" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="70dp"
             android:layout_height="58dp"
-            android:layout_marginLeft="180sp"
+            android:layout_marginLeft="240sp"
             android:layout_marginTop="150sp"
             app:srcCompat="@drawable/bubunsir" />
 
@@ -106,16 +105,16 @@
             android:id="@+id/imageView6"
             android:layout_width="84dp"
             android:layout_height="57dp"
-            android:layout_marginLeft="250sp"
-            android:layout_marginTop="150sp"
+            android:layout_marginLeft="180sp"
+            android:layout_marginTop="210sp"
             app:srcCompat="@drawable/saroj" />
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="82dp"
-            android:layout_height="59dp"
-            android:layout_marginLeft="120sp"
-            android:layout_marginTop="220sp"
+            android:layout_width="69dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="210sp"
             app:srcCompat="@drawable/arpita" />
 
 
