@@ -42,7 +42,7 @@
             android:name=".HostelReguarding"
             android:exported="false" />
         <activity
-            android:name=".FaclulityReguarding"
+            android:name=".FacultyRegarding"
             android:exported="false" />
         <activity
             android:name=".ComplainStudent"

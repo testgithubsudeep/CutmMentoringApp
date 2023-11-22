@@ -10,17 +10,17 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubjectReguarding extends AppCompatActivity {
-    DatabaseERP myDb;
+public class FacultyRegarding extends AppCompatActivity {
+    DatabaseHelperfaculty myDb;
     EditText subject, desc;
     Button submit,view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subject_reguarding);
+        setContentView(R.layout.activity_hostel_reguarding);
 
-        myDb = new DatabaseERP(this);
+        myDb = new DatabaseHelperfaculty(this);
         subject = findViewById(R.id.subject);
         desc = findViewById(R.id.desc);
         submit = findViewById(R.id.submit);
@@ -34,14 +34,14 @@ public class SubjectReguarding extends AppCompatActivity {
 
                 if (subjects.trim().isEmpty() || descs.trim().isEmpty()) {
                     // Handle empty input fields
-                    Toast.makeText(SubjectReguarding.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FacultyRegarding.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 } else {
                     boolean isInserted = myDb.insertData(subjects, descs);
                     if (isInserted) {
-                        Toast.makeText(SubjectReguarding.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FacultyRegarding.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
                         clearInputFields(); // Clear input fields after successful insertion
                     } else {
-                        Toast.makeText(SubjectReguarding.this, "Failed to insert data", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FacultyRegarding.this, "Failed to insert data", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

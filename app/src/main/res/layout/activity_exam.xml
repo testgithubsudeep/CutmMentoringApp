@@ -118,7 +118,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/submit1"
+            android:id="@+id/submit"
             android:layout_width="274dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="74sp"
