@@ -16,7 +16,7 @@ public class academicHelper extends SQLiteOpenHelper {
     public static final String COL_MATRICS = "matrics";
     public static final String COL_PLUS2 = "plus2s";
     public static final String COL_COURSENAME = "coursenames";
-    public static final String COL_GRADUATION = "graduations";
+    public static final String COL_RESULT= "graduations";
 
     public academicHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -29,7 +29,7 @@ public class academicHelper extends SQLiteOpenHelper {
                 COL_MATRICS + " TEXT, " +
                 COL_PLUS2 + " TEXT, " +
                 COL_COURSENAME + " TEXT, " +
-                COL_GRADUATION + " TEXT )";
+                COL_RESULT + " TEXT )";
         db.execSQL(createTableQuery);
     }
 
@@ -47,7 +47,7 @@ public class academicHelper extends SQLiteOpenHelper {
         contentValues.put(COL_MATRICS, matrics);
         contentValues.put(COL_PLUS2, plus2s);
         contentValues.put(COL_COURSENAME, coursenames);
-        contentValues.put(COL_GRADUATION, graduations);
+        contentValues.put(COL_RESULT, graduations);
 
         try {
             long result = db.insert(TABLE_NAME, null, contentValues);

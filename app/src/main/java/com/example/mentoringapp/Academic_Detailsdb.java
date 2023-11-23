@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Academic_Detailsdb extends AppCompatActivity {
     academicHelper myDb;
-    EditText matric, plus2, coursename, graduation;
+    EditText matric, plus2, coursename, result;
     Button submit, view, delete;
 
     @Override
@@ -24,7 +24,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
         matric = findViewById(R.id.matric);
         plus2 = findViewById(R.id.plus2);
         coursename = findViewById(R.id.coursename);
-        graduation = findViewById(R.id.graduation);
+        result = findViewById(R.id.result);
 
         submit = findViewById(R.id.submit);
         view = findViewById(R.id.view);
@@ -36,13 +36,13 @@ public class Academic_Detailsdb extends AppCompatActivity {
                 String matrics = matric.getText().toString();
                 String plus2s = plus2.getText().toString();
                 String coursenames = coursename.getText().toString();
-                String graduations = graduation.getText().toString();
+                String results = result.getText().toString();
 //                removing white spac char
-                if (matrics.trim().isEmpty() || plus2s.trim().isEmpty() || coursenames.trim().isEmpty() || graduations.trim().isEmpty()) {
+                if (matrics.trim().isEmpty() || plus2s.trim().isEmpty() || coursenames.trim().isEmpty() || results.trim().isEmpty()) {
                     // Handle empty input fields
                     Toast.makeText(Academic_Detailsdb.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    boolean isInserted = myDb.insertData(matrics, plus2s, coursenames, graduations);
+                    boolean isInserted = myDb.insertData(matrics, plus2s, coursenames, results);
                     if (isInserted) {
                         // Data inserted successfully
                         Toast.makeText(Academic_Detailsdb.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
@@ -73,7 +73,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
                     buffer.append("plus2s: ").append(result.getString(2)).append("\n");
                     // Add other fields as needed
                     buffer.append("coursenames: ").append(result.getString(3)).append("\n");
-                    buffer.append("graduations: ").append(result.getString(4)).append("\n");
+                    buffer.append("results: ").append(result.getString(4)).append("\n");
 //                     add the specified string
                 }
 
@@ -111,7 +111,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
         matric.getText().clear();
         plus2.getText().clear();
         coursename.getText().clear();
-        graduation.getText().clear();
+        result.getText().clear();
     }
 
     private void showMessage(String title, String message) {
