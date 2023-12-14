@@ -59,6 +59,7 @@ public class Academic_Detailsdb extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                to fetch a single row
                 Cursor result = myDb.getAllData();
                 if (result.getCount() == 0) {
                     // No data found
